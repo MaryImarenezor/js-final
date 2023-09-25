@@ -47,15 +47,14 @@ function createMap() {
 }
 
 
-createMap()
-/*
+
+
 
 //////a function main will be at the very bottom of this code/////////
-async function main() {
+function main() {
     //all the functions we created will be invoked here
     createMap()
 }
 main()
 
 
-*/
