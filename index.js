@@ -47,6 +47,8 @@ function createMap() {
 }
 
 
+createMap()
+/*
 
 //////a function main will be at the very bottom of this code/////////
 async function main() {
@@ -54,3 +56,6 @@ async function main() {
     createMap()
 }
 main()
+
+
+*/
