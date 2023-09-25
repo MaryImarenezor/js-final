@@ -14,14 +14,19 @@
 
 </head>
 <body>
-    <script src="index.js"></script>
     <!--Selection dropdown-->
-    <select name="locations" id="locations">
-        <option value="coffee">Coffee</option>
-        <option value="restaurant">Restaurant</option>
-        <option value="hotel">Hotel</option>
-        <option value="market">Market</option>
-    </select>
+    <form>
+        <!--use and addEventListener to grab the value; use .filter for the  -->
+        <script src="index.js"></script>
+        <select name="locations" id="locations">
+            <option value="coffee">Coffee</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="hotel">Hotel</option>
+            <option value="market">Market</option>
+        </select>
+        <button id="submit">Submit</button>
+    </form>
+
 
     <!--Map-->
     <div id="map"></div>
