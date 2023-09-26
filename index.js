@@ -51,7 +51,7 @@ function createMap(coords) {
 
 
 function createAMarker(coords) {
-    var marker = L.marker([coords.lat, coords.long]).bindPopup(<p1><b>You Are Here</b></p1>).addTo(map);
+    var marker = L.marker([coords.lat, coords.long]).bindPopup("You Are Here").addTo(map);
 }
 
 
