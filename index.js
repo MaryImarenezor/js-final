@@ -38,8 +38,8 @@ async function getUsersLocation() {
 }
 
 //replace the x and y coords with user's x and y coords.
-function createMap() { 
-    var map = L.map('map').setView([51.505, -0.09], 13)
+function createMap(coords) { 
+    var map = L.map('map').setView(coords, 13)
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -51,9 +51,10 @@ function createMap() {
 
 
 //////a function main will be at the very bottom of this code/////////
-function main() {
+async function main() {
     //all the functions we created will be invoked here
-    createMap()
+    let coords = await getUsersLocation()
+    createMap(coords)
 }
 main()
 
