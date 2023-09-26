@@ -2,7 +2,7 @@
  - i tried to fix up the bug with the event selector with the submit button. I commented it out so the code could be functional
  - i was able to pull up a marker that displayed the user's location
  - the map was able to show up
- -i was able to include the api code but that's how far I could go ;[
+ -i was able to include the api code but that's how far I could go ;(
 
 */
 
