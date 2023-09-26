@@ -46,14 +46,9 @@ function createMap(coords) {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    createAMarker(coords)
+    var marker = L.marker([coords.lat, coords.long]).bindPopup("<p1><b>You Are Here<b><br><p1>").addTo(map);
+
 }
-
-
-function createAMarker(coords) {
-    var marker = L.marker([coords.lat, coords.long]).bindPopup("You Are Here").addTo(map);
-}
-
 
 
 //////a function main will be at the very bottom of this code/////////
