@@ -56,9 +56,9 @@ function createMap(coords) {
 
 
 
-document.querySelector("#submit").addEventListener("click", async (event) => {
+document.getElementById("submit").addEventListener("click", async (event) => {
     event.preventDefault()
-    let locations = document.querySelector("#locations").value
+    let locations = document.getElementById("locations").value
 })
 
 
