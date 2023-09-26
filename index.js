@@ -1,3 +1,10 @@
+/*Grading NOTES---------
+ - i tried to fix up the bug with the event selector with the submit button. I commented it out so the code could be functional
+ - i was able to pull up a marker that displayed the user's location
+ - the map was able to show up
+
+*/
+
 /* Part 1 NOTES--------
  get API from twelvedata or from any alternative api generator site
 
