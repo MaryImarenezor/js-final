@@ -24,6 +24,10 @@ receive the users coords
 use an addEventListener to get the data of the coordinates from the user
     when using the addEventListener, use the submit button as a way for the querySelector
     use the addEventListener with the 'click' as the first parameter and the searchFunction as a way to filter the results
+    for the createAMarker function, try and doing this:
+        function createAMarker(put "this" as a parameter) {}
+        replace the coords.lat, coords.long with this.lat, this.long
+        invoke the funciton but put 'coords' as the parameter
 
 
 set the view in the code below to the users lat and long instead of the set coordinates
@@ -46,7 +50,7 @@ function createMap(coords) {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    var marker = L.marker([coords.latitude, coords.longitude]).bindPopup("<p1><b>You Are Here<b><br><p1>").addTo(map);
+    var marker = L.marker(coords).bindPopup("<p1><b>You Are Here<b><br><p1>").addTo(map);
 
 }
 
