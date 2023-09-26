@@ -56,8 +56,7 @@ function createMap(coords) {
 
 
 
-const varButton = document.querySelector("#submit")
-varButton.addEventListener('click', async (e) => {
+document.querySelector("#submit").addEventListener('click', async (e) => {
     e.preventDefault()
     let locations = document.querySelector("#locations").value
 })
