@@ -42,6 +42,11 @@ set the view in the code below to the users lat and long instead of the set coor
 
 
 */
+let api_url = "https://api.foursquare.com/v3/places/search?ll=fsq3cXxgu3RFSKe8iJ7vi0JDdf91KaT2hEvptTh3ZUN3WSI%3D";
+let response = await fetch(api_url)
+let data = response.json()
+return data
+
 async function getUsersLocation() {
     let pos = await new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject)
@@ -63,11 +68,13 @@ function createMap(coords) {
 
 
 
+/* COMMENTED THIS THING OUT SO THE PROGRAM COULD BE FUNCTIONAL
+
 document.getElementById("submit").addEventListener("click", async (event) => {
     event.preventDefault()
     let locations = document.getElementById("locations").value
 })
-
+*/
 
 //////a function main will be at the very bottom of this code/////////
 async function main() {
