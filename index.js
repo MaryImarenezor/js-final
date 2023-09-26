@@ -21,7 +21,7 @@ insert a marker for the user's location
 receive the users coords
 
 3 and 4.
-use an addEventListener to get the data of the coordinates from the user
+use an addEventListener to get the data from the user
     when using the addEventListener, use the submit button as a way for the querySelector
     use the addEventListener with the 'click' as the first parameter and the searchFunction as a way to filter the results
     for the createAMarker function, try and doing this:
@@ -53,6 +53,14 @@ function createMap(coords) {
     var marker = L.marker(coords).bindPopup("<p1><b>You Are Here<b><br><p1>").addTo(map);
 
 }
+
+
+
+const varButton = document.querySelector("#submit")
+varButton.addEventListener("click", async function(e){
+    e.preventDefault()
+    let locations = document.querySelector("#locations").value
+})
 
 
 //////a function main will be at the very bottom of this code/////////
