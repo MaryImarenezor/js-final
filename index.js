@@ -2,6 +2,7 @@
  - i tried to fix up the bug with the event selector with the submit button. I commented it out so the code could be functional
  - i was able to pull up a marker that displayed the user's location
  - the map was able to show up
+ -i was able to include the api code but that's how far I could go ;[
 
 */
 
@@ -42,11 +43,12 @@ set the view in the code below to the users lat and long instead of the set coor
 
 
 */
-let api_url = "https://api.foursquare.com/v3/places/search?ll=fsq3cXxgu3RFSKe8iJ7vi0JDdf91KaT2hEvptTh3ZUN3WSI%3D";
-let response = await fetch(api_url)
-let data = response.json()
-return data
-
+async function api() {
+    let api_url = "https://api.foursquare.com/v3/places/search?ll=fsq3cXxgu3RFSKe8iJ7vi0JDdf91KaT2hEvptTh3ZUN3WSI%3D";
+    let response = await fetch(api_url)
+    let data = response.json()
+    return data
+}
 async function getUsersLocation() {
     let pos = await new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition(resolve, reject)
