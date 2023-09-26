@@ -11,9 +11,11 @@ selesct interface
 
 /* Part 2 NOTES--------
 
+hardcode in the coordinates = place in filler coordinates until api is set up
 2.
 build the rest of the map by following along with leaflet startup guide
 wrap this around a funciton and use 'coords' as a paramater to replace the filler coords
+insert a marker for the user's location
 
 1. 
 receive the users coords
@@ -44,9 +46,13 @@ function createMap(coords) {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+    createAMarker(coords)
 }
 
 
+function createAMarker(coords) {
+    var marker = L.marker([coords.lat, coords.long]).bindPopup(<p1><b>You Are Here</b></p1>).addTo(map);
+}
 
 
 
